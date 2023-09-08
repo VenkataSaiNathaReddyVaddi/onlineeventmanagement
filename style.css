@@ -1,0 +1,144 @@
+body{
+   margin:-8px;
+}
+#main_date_obj{
+    margin-top:5%;
+    margin-left: 5%;
+    display: flex;
+}
+body{
+    background-color: skyblue;
+}
+.dateobj{
+    margin-right:5%;
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 6px;
+    background-color:rgb(2, 2, 87);
+    color:white;
+}
+.inpfield{
+    font-size: 75px;
+    max-width: 250px;
+    max-height: 250px;
+    padding-bottom:10px;
+    padding-top:20px;
+    text-align: center;
+    font-weight: bold;
+    background:none;
+    border: none;
+    color:white;
+}
+.sample_text{
+    margin-bottom: 35px;
+    font-size:30px;
+    font-weight: bold;
+}
+.subfields{
+    display:flex;
+    margin-left:10%;
+}
+.main_input
+{
+    font-size: 25px;
+    margin-top:40px;
+    max-width:100px;
+    max-height:500px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    border:2px solid white;
+    border-style:outset;
+    text-align: center;
+}
+#inp1{
+    margin-left: 75px;
+}
+#inp2{
+    margin-left: 220px;
+}
+#inp3{
+    margin-left: 220px;
+}
+#inp4{
+    margin-left: 220px;
+}
+#buttonset{
+    display: flex;
+    margin-top:80px;
+    margin-left: 32%;
+}
+.funct_btn{
+    color: white;
+    font-size: 28px;
+    padding-top:3px;
+    padding-bottom: 3px;
+    border-radius: 5px;
+    margin-right:7px;
+    cursor: pointer;
+}
+#set_timer{
+    background-color:rgb(2, 2, 87) ;
+    margin-left: 4px;
+}
+#strt{
+    background-color:rgb(200, 43, 200);
+
+}
+#pause{
+    background-color:rgb(94, 94, 223);
+}
+#reset{
+    background-color:orangered;
+}
+#footdiv{
+    color: white;
+    background-color:rgb(2, 2, 87);
+    padding-bottom: 2px;
+    margin-top:60px;
+}
+#headertag{
+    padding-top: 6px;
+    padding-bottom: 8px;
+    background-color: orange;
+    margin-top: 9px;
+}
+#headertag1{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+a{
+    color: white;
+    font-size:20px;
+    margin-right: 25px;
+    text-decoration: none;
+}
+#header_h1{
+float: left;
+color:white;
+font-size: 25px;
+}
+.eventnames{
+    width: 200px;
+    background-color:rgb(2, 2, 87);
+    margin-left: 50px;
+    color: white;
+    margin-right: 50px;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+.eventhead{
+    font-size: larger;
+    font-weight: bold;
+    margin-bottom: 10px ;
+}
+#divx{
+    display: flex;
+    flex-direction: row;
+}
+h1{
+    margin-left: 600px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}

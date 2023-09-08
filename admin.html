@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin page</title>
+    <style>
+        .confirm-box {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.message-box {
+    background: #fff;
+    text-align: center;
+    font-family: arial;
+    font-size: 25px;
+    padding: 50px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.button-box {
+    margin-top: 20px;
+}
+
+.delete-button {
+    background-color: red;
+    color: #fff;
+    border: 1px solid black;
+    font-size: 25px;
+    margin-right: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cancel-button {
+    background-color: green;
+    color: #fff;
+    border: 1px solid black;
+    font-size: 25px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+    </style>
+</head>
+<body style="margin-top: 0px; background-color: white;">
+    <h1 style="background-color: orange; text-align: center;width: 500px; margin-left: 400px;">Hello Admin</h1>
+    <h3>Select an Action from below</h3>
+    <form style="background-color: skyblue; width: 325px; margin-left: 500px;">
+        <button style="padding: 20px; margin : 20px; background-color: lightgrey; color: white;" onclick="showconfirm()">Add Event</button>
+        <button style="padding: 20px; margin : 20px; background-color: lightgrey; color: white;" onclick="show('popup2')">Delete Event</button>
+        <button style="padding: 20px; margin : 20px; background-color: lightgrey; color: white;" onclick="show('popup3')">Update Date</button>
+        <button style="padding: 20px; margin : 20px; background-color: lightgrey; color: white;" onclick="show('popup4')">Update time</button>
+    </form>
+    <script>
+    function showconfirm(callback) {
+    var confirmBox = document.createElement("div");
+    confirmBox.classList.add('confirm-box');
+    confirmBox.setAttribute("id","c-box");
+
+    var messageBox = document.createElement("div");
+    messageBox.classList.add('message-box');
+    messageBox.textContent = "* Confirm Deleting User*";
+    confirmBox.appendChild(messageBox);
+    document.body.appendChild(confirmBox);
+
+    var buttonBox = document.createElement("div");
+    buttonBox.classList.add('button-box');
+    messageBox.appendChild(buttonBox);
+
+    var deleteButton = document.createElement("button");
+    deleteButton.textContent = "delete";
+    deleteButton.classList.add("delete-button")
+    buttonBox.appendChild(deleteButton);
+    deleteButton.addEventListener('click', deleteclicked);
+    function deleteclicked() {
+        callback(true);
+    }
+    function cancelclicked() {
+        callback(false);
+    }
+    var cancelButton = document.createElement("button");
+    cancelButton.classList.add("cancel-button")
+    cancelButton.textContent = "cancel";
+    buttonBox.appendChild(cancelButton);
+    cancelButton.addEventListener('click', cancelclicked);
+    document.body.appendChild(confirmBox);
+}
+    
+    </script>
+</body>
+</html>

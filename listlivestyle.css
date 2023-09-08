@@ -1,0 +1,25 @@
+table{
+    margin-left: 500px;
+    margin-top: 50px;
+}
+.firstrow{
+    padding: 10px 20px 10px 20px;
+    background-color: rgb(168, 67, 67);
+    color: white;
+    text-align: center;
+    border: 2px solid black;
+}
+.secondrow{
+    padding: 10px 20px 10px 20px;
+    background-color: orange;
+    color: white;
+    text-align: center;
+    border: 2px solid black;
+}
+.thirdrow{
+    padding: 10px 20px 10px 20px;
+    background-color: skyblue;
+    color: white;
+    text-align: center;
+    border: 2px solid black;
+}

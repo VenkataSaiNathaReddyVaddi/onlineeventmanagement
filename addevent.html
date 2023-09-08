@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Event</title>
+    <link rel="stylesheet" href="./assets/addevent.css">
+</head>
+<body>
+    <form class="container" action="/addevent" method="GET">
+        <span>Add Event</span>
+        <div id="div1">
+            <label for="Event name"><b>Event name</b></label><br>
+            <input type="text" name="Eventname" id="eventname" class="input" required>
+        </div>
+        <div id="div2">
+            <label for="Date"><b>Date</b></label><br>
+            <input type="date" name="Date" id="Date" class="input" required>
+        </div><br>
+        <div id="div3">
+            <label for="time"><b>Time</b></label><br>
+            <input type="time" name="time" id="time" class="input" required><br>
+        </div><br>
+        <div id="div4">
+            <label for="link"><b>Livelink</b></label><br>
+            <input type="text" name="link" id="link" class="input" required>
+        </div>
+        <input type="submit">
+    </form>
+</body>
+</html>

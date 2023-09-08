@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add new admin</title>
+    <link rel="stylesheet" href="./assets/addnewadmin.css">
+</head>
+<body>
+    <form action="/addnewadmin" method="GET"class="container">
+        <span style="margin:50px 70px; font-weight: bolder; font-size: larger; padding-top: 100px; color: lightgreen;">Adding new Admin</span><br>
+        <div id="div0">
+            <label for="id"><b>College Id</b></label><br>
+            <input type="text" name="id" id="clgid" class="input" required>
+        </div>
+        <div id="div1">
+            <label for="email"><b>Email</b></label><br>
+            <input type="email" name="email" id="email" class="input" required>
+        </div>
+        <div id="div2">
+            <label for="Designation"><b>Designation</b></label><br>
+            <input type="text" name="Designation" id="Designation" class="input" required>
+        </div>
+        <div id="div3">
+            <label for="password"><b>Password</b></label><br>
+            <input type="password" name="password" id="password" class="input" required>
+        </div>
+        <div id="div4">
+            <label for="mobile"><b>Mobile number</b></label><br>
+            <input type="number" name="mobile" id="mobile" class="input" required>
+        </div>
+        <input type="submit">
+    </form>
+</body>
+</html>
